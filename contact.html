@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact form</title>
-    <link rel="stylesheet" href="contact.css" />
-  </head>
-  <body>
-    <form>
-      <div>
-        <label for="input-name">Name</label>
-        <input type="text" id="input-name" />
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="text" id="email" />
-      </div>
-      <div>
-        <label for="input-phone">Phone Number</label>
-        <input type="text" id="input-phone" />
-      </div>
-      <div>
-        <label for="input-subject">Subject</label>
-        <select id="input-subject">
-          <option value="" hidden>Select</option>
-          <option value="1">Frontend</option>
-          <option value="2">Backend</option>
-          <option value="3">Fullstack</option>
-        </select>
-      </div>
-      <div>
-        <label for="input-message">Your Message</label>
-        <textarea cols="30" rows="10" id="input-message"></textarea>
-      </div>
-      <button>Submit</button>
-    </form>
-  </body>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<form>
+
+  <div class="name">
+    <label for="input-name">Name</label>
+    <input height="100" type="text" id="input-name">
+  </div>
+
+  <div>
+    <label for="input-email">Email</label>
+    <input type="email" id="input-email">
+  </div>
+
+  <div>
+    <label for="input-phone">Phone Number</label>
+    <input type="number" id="input-phone">
+  </div>
+
+  <div>
+    <label for="input-subject">Subject</label>
+    <select id="input-subject">
+      <option value="" hidden>Select</option>
+      <option>Frontend</option>
+      <option>Backend</option>
+      <option>Fullstack</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="input-message">Your Message</label>
+    <textarea rows="5" cols="10" id="input-message"></textarea>
+  </div>
+
+  <div>
+    <button type="button" onclick="submitData()">Submit</button>
+  </div>
+</form>
+
+<script src="contact.js"></script>
+
+</body>
 </html>
